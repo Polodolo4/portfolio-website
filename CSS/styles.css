@@ -48,11 +48,12 @@ h1{
   /*sets the boldness of the font*/
 }
 
-h2{
-  font-size: 24px;
+h2 {
+  font-size: 50px;
   /*sets the font size to 24px*/
   font-weight: var(--font-weight-700);
   /*sets the boldness of the font*/
+  text-align: center;
 }
 
 a {

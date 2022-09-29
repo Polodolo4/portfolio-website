@@ -16,7 +16,7 @@ secondary button color (soft orange): #e0b354
 */
 
 body {
-  font-family: 'indie flower', cursive;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 20px;
   /*sets the font size to 16px*/
@@ -25,18 +25,58 @@ body {
   background-color: #ff7f50;
 }
 
-h1{
-  font-size: 30px;
+h1 {
+  font-size: 50px;
   /*sets the font size to 30px*/
   font-weight: 700;
   /*sets the boldness of the font*/
+  text-align: center;
 }
 
-h2{
+h2 {
   font-size: 24px;
   /*sets the font size to 24px*/
   font-weight: 700;
   /*sets the boldness of the font*/
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+  /*sets the font size to 24px*/
+  font-weight: 700;
+  /*sets the boldness of the font*/
+  text-align: center;
+}
+
+.meetpic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  border-radius: 25px;
+}
+
+.social-media a {
+  text-decoration: none;
+}
+
+.project-text {
+  text-align: center;
+  font-size: 18px;
+}
+
+.project-tech {
+  text-align: center;
+  font-size: 12px;
+}
+
+.project-links {
+  text-align: center; 
+}
+
+.meetpic:hover {
+  opacity: 0.4; 
 }
 
 a {
@@ -150,6 +190,21 @@ button:focus,
     max-width: 700px;
     margin: 0 auto;
 }
+.contact-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 10px;
+  color: var(--primary-color);
+  line-height: 2em;
+}
 
 * {
   -webkit-box-sizing: border-box;
@@ -194,6 +249,7 @@ button:focus,
 .my-work__item {
  display: inline-block;
  width: 33%;
+ border-radius: 25px;
 }
 
 /*about me page*/
