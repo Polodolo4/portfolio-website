@@ -36,31 +36,35 @@
   </nav>
 </header>
 
-<h1>Contact Me!</h1>
+<main class="contact-me">
+  <h1>Contact Me!</h1>
+    
+
+  <form action="Germang4.bw@gmail.com" method="post" id="contact-form">
+    <label>*</label>
+    <label class="standard-label" for=contact-email>E-mail: </label><br>
+    <input type="email" id="contact-email" required><br>
+
+    <label class="standard-label" for=contact-telephone>Telephone: </label><br>
+    <input type="tel" id=contact-telephone pattern=\d{3}[\-]\d{3}[\-]\d{4}><br>
+
+    <label>*</label>
+    <label class="standard-label" for=message>Message:</label><br>
+    <textarea maxlength="240" id=message required></textarea><br> 
+    (Limit 240 Characters)<br>
+
+    <input type="submit" value="Send message">
+  </form>
+
   <div>
-    45106 Lakeview Dr APT. #4316<br>
-    48044 Macomb, MI<br>
-    USA<br>
-    <a href="tel:+8177136074" class="contact-me-info"> Telephone Number 817-713-6074</a><br>
-    Skype <a href="skype:live:.cid.4b8111e714b55c25" class="contact-me-info">live:.cid.4b8111e714b55c25</a><br>
-    <a href="mailto:Germang4.bw@gmail.com" class="contact-me-info">Germang4.bw@gmail.com</a><br>
+    Somewhere, USA<br>
+    Phone Number: <a href="tel:+8177136074" class="contact-me-info">817-713-6074</a><br>
+    Skype: <a href="skype:live:.cid.4b8111e714b55c25" class="contact-me-info">live:.cid.4b8111e714b55c25</a><br>
+    Email: <a href="mailto:Germang4.bw@gmail.com" class="contact-me-info">Germang4.bw@gmail.com</a><br>
     <a href="mailto:Germang4.bw@gmail.com" class="contact-me-info">Contact me</a>
   </div>
 
-<form action="Germang4.bw@gmail.com" method="post" id="contact-form">
-  <label>*</label>
-  <label class="standard-label" for=contact-email>E-mail: </label>
-  <input type="email" id="contact-email" required>
-
-  <label class="standard-label" for=contact-telephone>Telephone: </label>
-  <input type="tel" id=contact-telephone pattern=\d{3}[\-]\d{3}[\-]\d{4}>
-
-  <label>*</label>
-  <label class="standard-label" for=message>Message:(Limit 240 Characters)</label>
-  <textarea maxlength="240" id=message required></textarea>
-
-  <input type="submit" value="Send message">
-</form>
+</main>
 
 <footer class="page-footer">
   <p>Find me on</p>
