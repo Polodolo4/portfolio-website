@@ -206,6 +206,102 @@ button:focus,
   line-height: 2em;
 }
 
+/*case study*/
+
+.meet-case-study {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: left;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 10px;
+  color: var(--primary-color);
+  line-height: 2em;
+}
+
+.meet-top {
+  font-size: 3.125em;
+  margin-bottom: 1.25em;
+}
+
+.meet-head {
+  text-align: left;
+  font-size: 1.625em;
+}
+
+.middle-head {
+  text-align: left;
+  font-size: 2em;
+}
+
+.hero {
+  float: right;
+  width: 750px;
+  overflow: auto;
+}
+
+.tools {
+  background:#000;
+  padding: .75em;
+  width: 285px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.tools-logos {
+  width: 3em;
+}
+
+.server-row {
+  display:flex;
+}
+
+.server-col {
+  flex: 50%;
+  padding: 15px;
+}
+
+.serverless { 
+  width: 650px;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: auto;
+}
+
+.error-row {
+  display:flex;
+}
+
+.error-col {
+  flex: 33.33%;
+  padding: 10px;
+}
+
+.error { 
+  width: 475px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: auto;
+}
+
+.return-projects {
+  background: #000;
+  color:#fff;
+  text-decoration: none;
+  padding: .6em;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

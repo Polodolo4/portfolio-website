@@ -32,7 +32,7 @@ secondary button color (soft orange): #e0b354
 }
 
 body {
-  font-family: 'indie flower', cursive;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 20px;
   /*sets the font size to 16px*/
@@ -42,14 +42,14 @@ body {
 }
 
 h1{
-  font-size: 30px;
+  font-size: 50px;
   /*sets the font size to 30px*/
   font-weight: var(--font-weight-700);
   /*sets the boldness of the font*/
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 24px;
   /*sets the font size to 24px*/
   font-weight: var(--font-weight-700);
   /*sets the boldness of the font*/
