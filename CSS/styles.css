@@ -11,7 +11,7 @@ secondary button color (soft orange): #e0b354
 :root {
   --primary-color: #357b70;
   --secondary-color: #e0b354;
-  --background-color: #ff7f50;
+  --background-color: #7f50ff;
   --primary-text: #fff;
   --secondary-text: #2b2b2b;
   --visited-link: #05676e;
@@ -20,7 +20,7 @@ secondary button color (soft orange): #e0b354
   --color-change-0: #edc655;
   --color-change-50: #9acd32;
   --color-change-100: #097969;
-  --grid-color: #d3d3d3;
+  --grid-color: #50ff7f;
   --font-weight-700: 700;
   --padding-20: 20px;
   --text-decoration: none;
@@ -31,8 +31,65 @@ secondary button color (soft orange): #e0b354
   --display-inline-block: inline-block;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  display: var(--display-flex);
+  flex-direction: row;
+  float: right;
+}
+
+ul li {
+  list-style: none;
+  margin: 0 20px;
+  transition: 0.5s;
+}
+
+ul li a{
+  display: block;
+  position: relative;
+  padding: 5px;
+  font-size: 20px;
+  color: #fff;
+  transition: 0.5s;
+}
+
+ul:hover li a{
+  transform: scale(1.5);
+  opacity: 0.2;
+  filter: blur(5px);
+}
+
+ul li a:hover{
+  transform:scale(2);
+  opacity:1;
+  filter:blur(0);
+  text-decoration:none;
+  color:#fff;
+}
+
+ul li a:before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:#ff7f50;
+  transition:0.5s;
+  transform-origin:right;
+  transform:scaleX(0);
+  z-index:-1;
+}
+
+ul li a:hover:before{
+  transition:transform 0.5s;
+  transform-origin:left;
+  transform:scaleX(1);
+}
+
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'EB Garamond', serif;
   font-weight: 400;
   font-size: 20px;
   /*sets the font size to 16px*/
@@ -46,6 +103,7 @@ h1{
   /*sets the font size to 30px*/
   font-weight: var(--font-weight-700);
   /*sets the boldness of the font*/
+  text-align: center;
 }
 
 h2 {
@@ -56,24 +114,87 @@ h2 {
   text-align: center;
 }
 
-a {
+h3 {
+  font-size: 24px;
+  /*sets the font size to 24px*/
+  font-weight: 700;
+  /*sets the boldness of the font*/
+  text-align: center;
+}
+
+.meetpic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  border-radius: 25px;
+}
+
+.chatpic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+ /* height: 100px;*/
+  border-radius: 25px;
+}
+
+.social-media a {
+  text-decoration: none;
+}
+
+.project-text {
+  text-align: center;
+  font-size: 18px;
+}
+
+.project-tech {
+  text-align: center;
+  font-size: 14px;
+}
+
+.git-links {
+  border: none;
+  /*takes the font from the outer cntainer*/
+  font-family: inherit;
+  /*styles the background color, font color, and text decoration (underline, etc.) of the button*/
+  background-color: #ff7f50;
+  color: var(--text-decoration-color);
+  text-decoration: var(--text-decoration);
+  /*adds spacing to the button (this will be discussed more in-depth later)*/
+  padding: 5px;
+  border-radius: 3px;
+  /*gives the button a bottom border with a width of 2px, a type of solid, and a color in rgba format*/
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition: 0.9s opacity;
+  text-align: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.meetpic:hover {
+  opacity: 0.4; 
+}
+
+/*a {
     color: var(--primary-color);
 }
 
 a:visited{
   /*visited link*/
-  color: var(--visited-link);
-}
+ /* color: var(--visited-link);
+}*/
 
 a:hover, a:focus{
   /*no underlining when hovering over a link*/
   text-decoration: var(--text-decoration);
 }
 
-a:active{
+/*a:active{
   /*selected link*/
-  color: var(--active-link);
-}
+  /*color: var(--active-link);
+}*/
 
 button,
 .button {
@@ -82,8 +203,8 @@ button,
   /*takes the font from the outer cntainer*/
   font-family: inherit;
   /*styles the background color, font color, and text decoration (underline, etc.) of the button*/
-  background-color: var(--primary-color);
-  color: var(--primary-text);
+  background-color: var(--grid-color);
+  color: var(--text-decoration-color);
   text-decoration: var(--text-decoration);
   /*adds spacing to the button (this will be discussed more in-depth later)*/
   padding: 10px;
@@ -117,6 +238,7 @@ button:focus,
 }
 
 .contact-me-info {
+  color: var(--text-decoration-color);
   text-decoration: var(--text-decoration);
 }
 
@@ -137,6 +259,112 @@ button:focus,
 .profile {
     max-width: 700px;
     margin: 0 auto;
+}
+
+.contact-me {
+  display: var(--display-flex);
+  flex-direction: var(--flex-direction);
+  text-align: var(--text-align);
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 10px;
+  line-height: 2em;
+}
+
+/*case study*/
+
+.meet-case-study {
+  display: var(--display-flex);
+  flex-direction: var(--flex-direction);
+  text-align: left;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 10px;
+  line-height: 2em;
+}
+
+.meet-top {
+  font-size: 3.125em;
+  margin-bottom: 1.25em;
+}
+
+.case-button {
+  text-decoration: none;
+  text-align: var(--text-align);
+  margin: 100px
+}
+
+.meet-head {
+  text-align: left;
+  font-size: 1.625em;
+}
+
+.middle-head {
+  text-align: left;
+  font-size: 2em;
+}
+
+.hero {
+  float: right;
+  width: 750px;
+  overflow: auto;
+}
+
+.tools {
+  background:#000;
+  padding: .75em;
+  width: 285px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.tools-logos {
+  width: 3em;
+}
+
+.server-row {
+  display:flex;
+}
+
+.server-col {
+  flex: 50%;
+  padding: 15px;
+}
+
+.serverless { 
+  width: 650px;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: auto;
+}
+
+.error-row {
+  display:flex;
+}
+
+.error-col {
+  flex: 33.33%;
+  padding: 10px;
+}
+
+.error { 
+  width: 475px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: auto;
+}
+
+.return-projects {
+  background: #000;
+  color:#fff;
+  text-decoration: none;
+  padding: .6em;
 }
 
 * {
@@ -175,6 +403,8 @@ button:focus,
 .my-work__item {
  display: var(--display-inline-block);
  width: 33%;
+ border-radius: 25px;
+ background-color: #ff7f50;
 }
 
 /*about me page*/
