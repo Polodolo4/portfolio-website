@@ -20,7 +20,7 @@ secondary button color (soft orange): #e0b354
   --color-change-0: #edc655;
   --color-change-50: #9acd32;
   --color-change-100: #097969;
-  --grid-color: #50ff7f;
+  --grid-color: #d3d3d3;
   --font-weight-700: 700;
   --padding-20: 20px;
   --text-decoration: none;
@@ -486,8 +486,8 @@ button:focus,
 }
 
 .my-work__item:last-child {
-  grid-column: 3 / 3;
-  grid-row: 1 / 3;
+  grid-column: auto / auto;
+  grid-row: auto / auto;
 }
 
 @media all and (max-width: 500px) {
