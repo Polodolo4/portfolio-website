@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Meet App Case Study </title>
+  <link rel="shortcut icon" type="img/png" href="img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+</head>
+
+<body>
+
+<header class="page-header">
+  <!--Add my logo here-->
+  <a href=https://polodolo4.github.io/portfolio-website> <img src="img/logo.png" alt="logo" class="page-header__item" height=119> </a>
+  <nav class="main-navigation page-header__item">
+    <ul role="menubar" class="navigation-list">
+      <li role="presentation">
+        <a href="index.html" role="menuitem" class="navigation-list__item ">Home</a>
+      </li>
+      <li role="presentation">
+        <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
+      </li>
+      <li role="presentation">
+        <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+      </li>
+      <li role="presentation">
+        <a href="work.html" role="menuitem" class="navigation-list__item">Projects</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main class="meet-case-study">
+  <h1 class="meet-top">MeetApp Case Study</h1>
+  <div class="intro">
+    <div class="intro-img">
+      <img src="img/case1/headScreen.png" class="hero" alt="WHOOPS!!!">
+    </div>
+    <div class="intro-content">
+    <h2 class="meet-head">Overview</h2>
+    <p>
+      This project was a serverless, progressive web app or PWA with React using a test-driven development approach.
+      The app uses the Google Calendar API to fetch upcoming events and then allows the user to sort/search by city
+      and see information specific to each event.
+    </p>
+    <h2 class="meet-head">Purpose and Context</h2>
+    <p>
+      This project was one I worked on as part of my Career Foundry course in Full-Stack Web Development.
+    </p>
+    <h2 class="meet-head">Objective</h2>
+    <p>
+      The main intent of the project is to expand on my knowledge in two concepts: Serverless and PWAs. They’ve both been
+      growing in popularity and are considered the future of web development, thus making the project an important one to
+      add to my skillset. Serverless is beneficial in that it requires no backend maintenance, is easy to scale, and is
+      always available, while PWAs offer instant loading, offline support, push notifications, “add to home screen”
+      prompts, and cross-platform compatibility.
+    </p>
+  </div>
+  <div>
+    <h2 class="meet-head">Duration</h2>
+    <p>
+      This particular project took me about two months, as my time was half dedicated to this project, and half dedicated 
+      to polishing another project at the same time.
+    </p>
+    <h2 class="meet-head">Credits</h2>
+    <p>
+      My role was the lead developer on this project with the aid of my Career Foundry Tutor and Mentor.
+    </p>
+    <div class="tools-row">
+      <div class="tools-col">
+        <h2 class="meet-head">Tools, Skills, Methodologies</h2>
+      </div>
+      <div class="tools">
+        <img src="img/case1/calendar.png" class="tools-logos" alt="calendar">
+        <img src="img/case1/lambda.png" class="tools-logos"  alt="calendar">
+        <img src="img/case1/jest.png" class="tools-logos" alt="calendar">
+      </div>
+    </div>
+    <p>
+      The project was built using React and makes use of Google Calendar API/OAuth2 authentication, AWS lambda, & data visualization. 
+      It was developed using a test-driven development approach with the use of Jest/Puppeteer.
+    </p>
+  </div>
+  <div class="end">
+    <h3 class="middle-head">Project Process</h3>
+    <p>
+      First, I set up access to the Google Calendar API by the means of 3 serverless functions, allowing me to later fetch the coding events
+      hosted around the world and display them accordingly within my app.
+      <br>
+      <div class="server-row">
+        <div class="server-col">
+          <img src="img/case1/aws.png" class="serverless" alt="serverless">
+        </div>
+        <div class="server-col">
+          <img src="img/case1/serverless.png" class="serverless" alt="serverless">
+        </div>
+      </div>
+      <br>
+      I then proceeded to build out the main functionality of the app such
+      as filtering events by city, showing/hiding event details, & specifying (and rendering the specified) number of events. Throughout this
+      process I employed unit testing to ensure my individual app components functioned independently as well as integration testing to ensure
+      all the components of my app functioned properly in conjunction with one another. At times, this was a frustrating step as I would feel my 
+      test cases should all pass, only to find that one (or more) were failing, but more often than not this issue was simply a case of misnaming
+      parts of my test cases. 
+      <br>
+      <br>
+      At this stage, I wrote the code to produce three different error messages when certain actions triggered them.
+      One triggering when the user sets the events to render to a number outside of 1-32, one for when user is searching for a city with no events, 
+      and one to display when the user is offline.
+      I then set up my service worker and web app manifest to convert my app to a full PWA with the capability of being installed on both computers as
+      well as mobile devices.
+      <br>
+      <div class="error-row">
+        <div class="error-col">
+          <img src="img/case1/err1.png" class="error" alt="serverless">
+        </div>
+        <div class="error-col">
+          <img src="img/case1/err2.png" class="error" alt="serverless">
+        </div>
+        <div class="error-col">
+          <img src="img/case1/err3.png" class="error" alt="serverless">
+        </div>
+      </div>
+      <br>
+      And lastly rounded out the project with some data visualization via the Recharts library, with a pie chart breaking down the percentage of topics 
+      of discussion for events and a line chart showing the numbers of events per city.
+    </p>
+    <h3 class="middle-head">Conclusion</h3>
+    <p>
+      This project threw a lot of new knowledge my way between working with serverless functions & understanding and creating PWAs, as well as gave
+      me more hands-on experience with React. While I did hit some bumps in the road building out the different components of this app, learning
+      about and making use of test cases ultimately helped bring the project to life.
+    </p>
+  </div>
+  
+  
+</main>
+
+<footer class="page-footer">
+  <div>
+    <a href="work.html" role="menuitem" class="return-projects">Go back to my projects!</a>
+  </div>
+  <p>Find me on</p>
+  <div class="social-media">
+    <a href="https://github.com/Polodolo4">
+      <img src="img/github_icon.svg" alt="Github">
+    </a>
+    <!--<a href="https://twitter.com/Whiteside_sucks">
+      <img src="img/twitter_icon.svg" alt="Twitter">
+    </a>-->
+    <a href="https://www.linkedin.com/in/brett-whiteside-20b590214/">
+      <img src="img/linkedin_icon.svg" alt="LinkedIn">
+    </a>
+    <a href="https://medium.com/@solopolodolo4">
+      <img src="img/medium_icon.png" alt="Medium">
+    </a>
+  </div>
+</footer>
+
+<script src="js/tota11y.min.js"></script>
+</body>
+
+</html>
