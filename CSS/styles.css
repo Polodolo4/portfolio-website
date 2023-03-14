@@ -372,6 +372,8 @@ button:focus,
   box-sizing: border-box;
 }
 
+/*meet app case study end*/
+
 /*brett flix case study*/
 
 .tools-brett {
@@ -389,6 +391,44 @@ button:focus,
   float: right;
   width: 750px;
   overflow: auto;
+  box-shadow: 0.438rem 0.438rem #000;
+}
+
+.heroku-row {
+  display:flex;
+}
+
+.heroku-col {
+  flex: 50%;
+  padding: 15px;
+}
+
+.API { 
+  width: 650px;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: auto;
+  box-shadow: 0.438rem 0.438rem #fff;
+}
+
+.heroku { 
+  width: 650px;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: auto;
+  box-shadow: 0.438rem 0.438rem #000;
+}
+
+.brett-app-screen { 
+  width: 475px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: auto;
   box-shadow: 0.438rem 0.438rem #000;
 }
 

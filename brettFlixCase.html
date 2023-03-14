@@ -86,52 +86,44 @@
   <div class="end">
     <h3 class="middle-head">Project Process</h3>
     <p>
-      First, I set up access to the Google Calendar API by the means of 3 serverless functions, allowing me to later fetch the coding events
-      hosted around the world and display them accordingly within my app.
+      First off, in a prior project for my CareerFoundry course I built out the server-side REST API for the application. The API was built using Node, Express, MongoDB Mongoose and deployed to Heroku. 
       <br>
-      <div class="server-row">
-        <div class="server-col">
-          <img src="img/case1/aws.png" class="serverless" alt="serverless">
+      <div class="heroku-row">
+        <div class="heroku-col">
+          <img src="img/brettFlix/api1.png" class="API" alt="heroku">
         </div>
-        <div class="server-col">
-          <img src="img/case1/serverless.png" class="serverless" alt="serverless">
+        <div class="heroku-col">
+          <img src="img/brettFlix/heroku.png" class="heroku" alt="heroku">
         </div>
       </div>
       <br>
-      I then proceeded to build out the main functionality of the app such
-      as filtering events by city, showing/hiding event details, & specifying (and rendering the specified) number of events. Throughout this
-      process I employed unit testing to ensure my individual app components functioned independently as well as integration testing to ensure
-      all the components of my app functioned properly in conjunction with one another. At times, this was a frustrating step as I would feel my 
-      test cases should all pass, only to find that one (or more) were failing, but more often than not this issue was simply a case of misnaming
-      parts of my test cases. 
+      With my server-side code intact from a prior project, I began working on the client-side. As this project was going to be developed using the Angular framework,
+      I started off by creating a new app using the Angular CLI, and the necessary logic for making API calls. I then made dialog boxes for both the created user login
+      component and user registration component and linking them with the “app.component.ts” root component and ensuring the proper response from my API was returned. 
       <br>
       <br>
-      At this stage, I wrote the code to produce three different error messages when certain actions triggered them.
-      One triggering when the user sets the events to render to a number outside of 1-32, one for when user is searching for a city with no events, 
-      and one to display when the user is offline.
-      I then set up my service worker and web app manifest to convert my app to a full PWA with the capability of being installed on both computers as
-      well as mobile devices.
+      From there, I then built out a welcome page component where the user registration/login functionality would live, as well as building a user profile component
+      allowing users to edit/view/delete their profile, & a movie card component that displays the movies on the main page after users login. The movie cards themselves
+      contain buttons that display dialog boxes containing information about the movie’s director, genre, of a summary of the movie.
       <br>
       <div class="error-row">
         <div class="error-col">
-          <img src="img/case1/err1.png" class="error" alt="serverless">
+          <img src="img/brettFlix/welcome.png" class="brett-app-screen" alt="serverless">
         </div>
         <div class="error-col">
-          <img src="img/case1/err2.png" class="error" alt="serverless">
+          <img src="img/brettFlix/movie.png" class="brett-app-screen" alt="serverless">
         </div>
         <div class="error-col">
-          <img src="img/case1/err3.png" class="error" alt="serverless">
-        </div>
+          <img src="img/brettFlix/profile.png" class="brett-app-screen" alt="serverless">
+        </div>  
       </div>
       <br>
-      And lastly rounded out the project with some data visualization via the Recharts library, with a pie chart breaking down the percentage of topics 
-      of discussion for events and a line chart showing the numbers of events per city.
+      Finally, I made the application responsive, finalized my CSS stylings of the application, applied a simple UI design using Angular Material, and documented my code using TypeDoc.
     </p>
     <h3 class="middle-head">Conclusion</h3>
     <p>
-      This project threw a lot of new knowledge my way between working with serverless functions & understanding and creating PWAs, as well as gave
-      me more hands-on experience with React. While I did hit some bumps in the road building out the different components of this app, learning
-      about and making use of test cases ultimately helped bring the project to life.
+      This project was my first foray into Angular after a React heavy portion of my CareerFoundry course. While there were certainly some things I liked and things I did not like about
+      Angular after spending a lot of time working with another framework, I ultimately ended up with a clean looking, well-functioning application that I’m proud of. 
     </p>
   </div>
   
