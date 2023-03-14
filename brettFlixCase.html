@@ -24,13 +24,13 @@
         <a href="index.html" role="menuitem" class="navigation-list__item ">Home</a>
       </li>
       <li role="presentation">
+        <a href="work.html" role="menuitem" class="navigation-list__item">Projects</a>
+      </li>
+      <li role="presentation">
         <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
       </li>
       <li role="presentation">
         <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-      </li>
-      <li role="presentation">
-        <a href="work.html" role="menuitem" class="navigation-list__item">Projects</a>
       </li>
     </ul>
   </nav>
@@ -40,33 +40,31 @@
   <h1 class="meet-top">BrettFlix Case Study</h1>
   <div class="intro">
     <div class="intro-img">
-      <img src="img/case1/headScreen.png" class="hero" alt="WHOOPS!!!">
+      <img src="img/Angular.png" class="hero-brett" alt="WHOOPS!!!">
     </div>
     <div class="intro-content">
     <h2 class="meet-head">Overview</h2>
     <p>
-      This project was a serverless, progressive web app or PWA with React using a test-driven development approach.
-      The app uses the Google Calendar API to fetch upcoming events and then allows the user to sort/search by city
-      and see information specific to each event.
+      This "BrettFlix" project serves as the client-side for an application based on my existing server-side "MyFlix API"
+      project consisting of a REST API and database.
     </p>
     <h2 class="meet-head">Purpose and Context</h2>
     <p>
-      This project was one I worked on as part of my Career Foundry course in Full-Stack Web Development.
+      This project is somewhat similar to websites such as "IMDB" that I completed as part of my Career Foundry course in Full-Stack Web Development.
     </p>
     <h2 class="meet-head">Objective</h2>
     <p>
-      The main intent of the project is to expand on my knowledge in two concepts: Serverless and PWAs. They’ve both been
-      growing in popularity and are considered the future of web development, thus making the project an important one to
-      add to my skillset. Serverless is beneficial in that it requires no backend maintenance, is easy to scale, and is
-      always available, while PWAs offer instant loading, offline support, push notifications, “add to home screen”
-      prompts, and cross-platform compatibility.
+      The goal for this project was to build upon a prior server-side project (MyFlix API) & develop the client-side to make this a fully functional application,
+      which was accomplished by exposing me to a few new topics such as the Angular framework, TypeScript, & Angular Material. Key features with the app include a welcome view 
+      allowing new users to register, or alternatively log in if already registered. From there, users can view all the movies in the database from my "MyFlix API" project, add/remove 
+      them from their favorites, and open windows displaying more info about each movie's genre, director, & summary. Additionally, users can go to their profile and make changes, or delete
+      their profile altogether.
     </p>
   </div>
   <div>
     <h2 class="meet-head">Duration</h2>
     <p>
-      This particular project took me about two months, as my time was half dedicated to this project, and half dedicated 
-      to polishing another project at the same time.
+      From start to finish (including TypeDoc documentation) this project took me 3 weeks to complete.
     </p>
     <h2 class="meet-head">Credits</h2>
     <p>
@@ -76,66 +74,56 @@
       <div class="tools-col">
         <h2 class="meet-head">Tools, Skills, Methodologies</h2>
       </div>
-      <div class="tools">
-        <img src="img/case1/calendar.png" class="tools-logos" alt="calendar">
-        <img src="img/case1/lambda.png" class="tools-logos"  alt="calendar">
-        <img src="img/case1/jest.png" class="tools-logos" alt="calendar">
+      <div class="tools-brett">
+        <img src="img/brettFlix/angular-icon.png" class="tools-logos" alt="calendar">
+        <img src="img/brettFlix/typescript.png" class="tools-logos"  alt="calendar">
       </div>
     </div>
     <p>
-      The project was built using React and makes use of Google Calendar API/OAuth2 authentication, AWS lambda, & data visualization. 
-      It was developed using a test-driven development approach with the use of Jest/Puppeteer.
+      The project was built with the Angular framework, TypeScript (a new programming language for me at the time), and the Angular Material UI component library.
     </p>
   </div>
   <div class="end">
     <h3 class="middle-head">Project Process</h3>
     <p>
-      First, I set up access to the Google Calendar API by the means of 3 serverless functions, allowing me to later fetch the coding events
-      hosted around the world and display them accordingly within my app.
+      First off, in a prior project for my CareerFoundry course I built out the server-side REST API for the application. The API was built using Node, Express, MongoDB Mongoose and deployed to Heroku. 
       <br>
-      <div class="server-row">
-        <div class="server-col">
-          <img src="img/case1/aws.png" class="serverless" alt="serverless">
+      <div class="heroku-row">
+        <div class="heroku-col">
+          <img src="img/brettFlix/api1.png" class="API" alt="heroku">
         </div>
-        <div class="server-col">
-          <img src="img/case1/serverless.png" class="serverless" alt="serverless">
+        <div class="heroku-col">
+          <img src="img/brettFlix/heroku.png" class="heroku" alt="heroku">
         </div>
       </div>
       <br>
-      I then proceeded to build out the main functionality of the app such
-      as filtering events by city, showing/hiding event details, & specifying (and rendering the specified) number of events. Throughout this
-      process I employed unit testing to ensure my individual app components functioned independently as well as integration testing to ensure
-      all the components of my app functioned properly in conjunction with one another. At times, this was a frustrating step as I would feel my 
-      test cases should all pass, only to find that one (or more) were failing, but more often than not this issue was simply a case of misnaming
-      parts of my test cases. 
+      With my server-side code intact from a prior project, I began working on the client-side. As this project was going to be developed using the Angular framework,
+      I started off by creating a new app using the Angular CLI, and the necessary logic for making API calls. I then made dialog boxes for both the created user login
+      component and user registration component and linking them with the “app.component.ts” root component and ensuring the proper response from my API was returned. 
       <br>
       <br>
-      At this stage, I wrote the code to produce three different error messages when certain actions triggered them.
-      One triggering when the user sets the events to render to a number outside of 1-32, one for when user is searching for a city with no events, 
-      and one to display when the user is offline.
-      I then set up my service worker and web app manifest to convert my app to a full PWA with the capability of being installed on both computers as
-      well as mobile devices.
+      From there, I then built out a welcome page component where the user registration/login functionality would live, as well as building a user profile component
+      allowing users to edit/view/delete their profile, & a movie card component that displays the movies on the main page after users login. The movie cards themselves
+      contain buttons that display dialog boxes containing information about the movie’s director, genre, of a summary of the movie.
       <br>
       <div class="error-row">
         <div class="error-col">
-          <img src="img/case1/err1.png" class="error" alt="serverless">
+          <img src="img/brettFlix/welcome.png" class="brett-app-screen" alt="serverless">
         </div>
         <div class="error-col">
-          <img src="img/case1/err2.png" class="error" alt="serverless">
+          <img src="img/brettFlix/movie.png" class="brett-app-screen" alt="serverless">
         </div>
         <div class="error-col">
-          <img src="img/case1/err3.png" class="error" alt="serverless">
-        </div>
+          <img src="img/brettFlix/profile.png" class="brett-app-screen" alt="serverless">
+        </div>  
       </div>
       <br>
-      And lastly rounded out the project with some data visualization via the Recharts library, with a pie chart breaking down the percentage of topics 
-      of discussion for events and a line chart showing the numbers of events per city.
+      Finally, I made the application responsive, finalized my CSS stylings of the application, applied a simple UI design using Angular Material, and documented my code using TypeDoc.
     </p>
     <h3 class="middle-head">Conclusion</h3>
     <p>
-      This project threw a lot of new knowledge my way between working with serverless functions & understanding and creating PWAs, as well as gave
-      me more hands-on experience with React. While I did hit some bumps in the road building out the different components of this app, learning
-      about and making use of test cases ultimately helped bring the project to life.
+      This project was my first foray into Angular after a React heavy portion of my CareerFoundry course. While there were certainly some things I liked and things I did not like about
+      Angular after spending a lot of time working with another framework, I ultimately ended up with a clean looking, well-functioning application that I’m proud of. 
     </p>
   </div>
   
@@ -160,6 +148,10 @@
     <a href="https://medium.com/@solopolodolo4">
       <img src="img/medium_icon.png" alt="Medium">
     </a>
+  </div>
+  <div class="attributes">
+    <a href="https://iconscout.com/icons/angular" target="_blank">Angular Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia">Icon Mafia</a> on <a href="https://iconscout.com">IconScout</a> <br>
+    <a href="https://iconscout.com/icons/typescript" target="_blank">Typescript Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia" target="_blank">Icon Mafia</a>
   </div>
 </footer>
 
