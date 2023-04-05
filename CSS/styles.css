@@ -527,9 +527,44 @@ button:focus,
   align-items: center;
   margin: auto;
 }
+
+/*.fire-image {
+  margin-left: 2em;
+  float: right;
+  width: 250px;
+}*/
+
+.fire-screen {
+  width: 750px;
+  margin-top: 50px;
+}
  
-.middle {
-  margin-left: 15px;
+.middle-chat {
+  margin-left: 10px;
+}
+
+.end-chat {
+  margin-left: 10px;
+}
+
+.chat-bottom {
+  border-radius: 15px;
+  width: 300px;
+}
+
+.chat-screens {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.chat-screens-text {
+  margin-left: 2em;
+}
+
+.chat-screens-img {
+  margin-right: 2em;
 }
 
 
