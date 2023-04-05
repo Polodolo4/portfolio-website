@@ -488,7 +488,7 @@ button:focus,
 
 /*brett flix case end*/
 
-/*Pokedex case start*/
+/*Chat app case start*/
 
 .hero-chat {
   float: left;
@@ -496,17 +496,19 @@ button:focus,
   overflow: auto;
   box-shadow: 0.438rem 438rem 438rem 0.438rem #ff7f50;
   border-radius: 15px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .chat-intro {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  overflow: auto;
+
 }
 
 .chat-text {
-  margin-left: 2em;
+  margin-left: 3em;
 }
 
 .chat-image {
@@ -514,6 +516,24 @@ button:focus,
   float: right;
   width: 750px;
 }
+
+.tools-chat {
+  background:#7c6a6a;
+  padding: .75em;
+  width: 300px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+ 
+.middle {
+  margin-left: 15px;
+}
+
+
+/*chat app case end*/
 
 .page-header {
   display: var(--display-flex);
