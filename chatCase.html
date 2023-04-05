@@ -50,7 +50,7 @@
     <div class="chat-text">
         <h2 class="meet-head">Overview</h2>
         <p>
-        My chat application is an application developed for mobile & designed to mimic other modern chat applications.
+        My chat application is an application developed with React Native & designed to mimic other modern chat applications.
         </p>
         <br>
         <h2 class="meet-head">Purpose and Context</h2>
@@ -68,10 +68,10 @@
   </div>
   <br>
 
-  <div class="middle">
+  <div class="middle-chat">
     <h2 class="meet-head">Duration</h2>
     <p>
-      This particular project took me approximately 3 weeks to complete.
+      This particular project took me a bit longer than it normally would have due to a slight issue with a dependency versioning issue, but I completed it in about 5 weeks.
     </p>
     <br>
     <h2 class="meet-head">Credits</h2>
@@ -95,90 +95,66 @@
     </p>
     <br>
   </div>
-  
-  <div class="end">
-    <h3 class="middle-head"> Server-Side Project Process</h3>
+
+  <div class="end-chat">
+    <h3 class="middle-head">Project Process</h3>
       <div class="post">
         <div class="post-text">
           <p>
-            For the server-side of my project, I created a RESTful API using tech such as Express/Node, in conjunction with MongoDB to store data collections on both movies and users.
-            This API is accessible with HTTP methods, GET, PUT, POST, & DELETE to manipulate the data in the users/movie collections.
+            To begin this project, I installed and set up Expo/Expo Go so I could develop my project and see the changes made in real-time.
+            I then built out the code for the separate "screens" I would need for the application, installed React Navigation, and set up a TouchableOpacity wrapper to allow users to navigate between said screens.
+            Also installed was Gifted Chat to handle much of the chat functionality of the application, and I implemented code to make use of the
+            KeyboardAvoidingView component to ensure the input field won't be hidden beneath the keyboard on any smaller screened devices.
             <br>
             <br>
-            Thoughout development, I tested my endpoints with the use of Postman to ensure I was getting the correct responses from the HTTP requests.      
+            Next up was installing Firebase, as well as getting my Google Firestore Database set up for the application to handle the messaging and media storage. 
           </p>
         </div>
-        <div class="post-image">
-          <img src="img/brettFlix/post-screen.png" class="post-screen" alt="postman screenshot">
+        <div class="fire-image">
+          <img src="img/chatCase/fire-screen.png" class="fire-screen" alt="firebase screenshot">
         </div>
       </div>
-      <div class="server-mid">
-        <br>
-        <p>
-          After I had the endpoints complete and tested, I added two passport strategies (LocalStrategy and JWTSrategy) for authentication. I then 
-          integrated them as middleware as existing API endpoints to ensure only users with a JWT token can make requests to the API.
-
-          I also implemented CORS into the app to ensure the API is accessible by all domains, added password hashing to the HTTP handlers to ensure password arent stored in 
-          the database, and data validation to ensure all data is formatted as it should be.
-        </p>
-        <br>
-        <p>
-          At this point, I deployed my app to Heroku, uploaded my database to MongoDB, and connected the 2, completing my back-end.
-        </p>
-       
+      <div class="chat-screens">
+        <div class="chat-screens-img">
+          <img src="img/chatCase/messages.png" class="chat-bottom" alt="serverless">
+        </div>
+        <div class='chat-screens-text'>
+          <br>
+          <br>
+          <br>
+          <p>
+            I then installed AsyncStorage to store messages locally, as well as set Firestore to disable when there is no network connection. 
+            From there, I added code so the messages would display from Firestore when it's active, & from cached messages when not active.
+          </p>
+          <br>
+          <p>
+            Lastly, I added an ActionSheet to the chat screen giving users the options to choose a photo from their existing photos, take a new photo,
+            send their location, or cancel.
+          </p>
+        </div>
+      <br>
+      <br>
+      <br>
+      <br>
+    
+      <div class="chat-screens-img">
+          <img src="img/chatCase/actions.png" class="chat-bottom" alt="serverless">
       </div>
       
-      <br>
-      <div class="heroku-row">
-        <div class="heroku-col">
-          <img src="img/brettFlix/heroku.png" class="heroku" alt="heroku">
-        </div>
-        <div class="heroku-col">
-          <img src="img/brettFlix/api1.png" class="API" alt="heroku">
-        </div>
-      </div>
-      <br>
 
-      <div class="git-server">
-        <a href="https://github.com/Polodolo4/MyFlix" class="server-git" target="new"> To view the server-side API repository, click here!</a>
       </div>
-      <br>
-      <h3 class="middle-head"> Client-Side Project Process</h3>
-      With my server-side code established, I began working on the client-side. As this project was going to be developed using the Angular framework,
-      I started off by creating a new app using the Angular CLI, and the necessary logic for making API calls. I then made dialog boxes for both the created user login
-      component and user registration component and linking them with the “app.component.ts” root component and ensuring the proper response from my API was returned. 
-      <br>
-      <br>
-      From there, I then built out a welcome page component where the user registration/login functionality would live, as well as building a user profile component
-      allowing users to edit/view/delete their profile, & a movie card component that displays the movies on the main page after users login. The movie cards themselves
-      contain buttons that display dialog boxes containing information about the movie’s director, genre, of a summary of the movie.
-      <br>
-      <br>
-      <div class="error-row">
-        <div class="error-col">
-          <img src="img/brettFlix/welcome.png" class="brett-app-screen" alt="serverless">
-        </div>
-        <div class="error-col">
-          <img src="img/brettFlix/movie.png" class="brett-app-screen" alt="serverless">
-        </div>
-        <div class="error-col">
-          <img src="img/brettFlix/profile.png" class="brett-app-screen" alt="serverless">
-        </div>  
-      </div>
-      <br>
-      Finally, I made the application responsive, finalized my CSS stylings of the application, applied a simple UI design using Angular Material, and documented my code using TypeDoc.
-    </p>
-    <br>
+
     <br>
     <h3 class="middle-head">Challenges</h3>
     <p>
-      One of the most frustrating challenges I had with this project was getting my user information to properly update when trying to do so within the app.
-      Ultimately, with the guidance of my mentor and the use of Postman, we were able to deduce that I had a slight issue with one of my enpoints and wasn't getting the desired response.
+      The most difficult challenge I faced was getting my Firestore Database connected properly with my application. At the time, a newer version of Firebase had just come out, while my coding course curriculum 
+      was still using an older version. Neither of these versions were working and so I meticulously read through the documentation for the newer version, which ultimately didn't work out either. In the end, through
+      some perseverance and assistance from my CareerFoundry tutor, I was able to find a version that would function within my app. 
     </p>
     <h3 class="middle-head">Conclusion</h3>
     <p>
-      This project was my first foray into both server-side coding as well as working with the Angular framework. It was quite a bit of new knowledge to take in,
-      but I ultimately ended up with a clean looking, well-functioning application that I’m proud to have in my portfolio. 
+      This was one of my more enjoyable projects that I completed for CareerFoundry, outside of the Firebase versioning headache that is! I really enjoyed working with React Native's components
+      and the mobile side of development in general.
     </p>
     <br>
   </div>
