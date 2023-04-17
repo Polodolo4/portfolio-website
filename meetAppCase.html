@@ -38,43 +38,49 @@
 
 <main class="meet-case-study">
   <h1 class="meet-top">MeetApp Case Study</h1>
+  <br>
   <div class="intro">
     <div class="intro-img">
-      <img src="img/case1/headScreen.png" class="hero" alt="WHOOPS!!!">
+      <img src="img/case1/headScreen1.png" class="hero" alt="WHOOPS!!!">
     </div>
     <div class="intro-content">
-    <h2 class="meet-head">Overview</h2>
+    <h3 class="meet-head">Overview</h3>
     <p>
       This project was a serverless, progressive web app or PWA with React using a test-driven development approach.
       The app uses the Google Calendar API to fetch upcoming events and then allows the user to sort/search by city
       and see information specific to each event.
     </p>
-    <h2 class="meet-head">Purpose and Context</h2>
+    <br>
+    <h3 class="meet-head">Purpose and Context</h3>
     <p>
       This project was one I worked on as part of my Career Foundry course in Full-Stack Web Development.
     </p>
-    <h2 class="meet-head">Objective</h2>
+    <br>
+    <h3 class="meet-head">Objective</h3>
     <p>
-      The main intent of the project is to expand on my knowledge in two concepts: Serverless and PWAs. They’ve both been
+      The main intent of the project was to expand on my knowledge in two concepts: Serverless and PWAs. They’ve both been
       growing in popularity and are considered the future of web development, thus making the project an important one to
       add to my skillset. Serverless is beneficial in that it requires no backend maintenance, is easy to scale, and is
       always available, while PWAs offer instant loading, offline support, push notifications, “add to home screen”
       prompts, and cross-platform compatibility.
     </p>
   </div>
+  <br>
   <div>
-    <h2 class="meet-head">Duration</h2>
+    <h3 class="meet-head">Duration</h3>
     <p>
       This particular project took me about two months, as my time was half dedicated to this project, and half dedicated 
       to polishing another project at the same time.
     </p>
-    <h2 class="meet-head">Credits</h2>
+    <br>
+    <h3 class="meet-head">Credits</h3>
     <p>
-      My role was the lead developer on this project with the aid of my Career Foundry Tutor and Mentor.
+      My role was the lead developer on this project with the aid of my CareerFoundry Tutor and Mentor.
     </p>
+    <br>
     <div class="tools-row">
       <div class="tools-col">
-        <h2 class="meet-head">Tools, Skills, Methodologies</h2>
+        <h3 class="meet-head">Tools, Skills, Methodologies</h3>
       </div>
       <div class="tools">
         <img src="img/case1/calendar.png" class="tools-logos" alt="calendar">
@@ -82,11 +88,13 @@
         <img src="img/case1/jest.png" class="tools-logos" alt="calendar">
       </div>
     </div>
+    <br>
     <p>
       The project was built using React and makes use of Google Calendar API/OAuth2 authentication, AWS lambda, & data visualization. 
       It was developed using a test-driven development approach with the use of Jest/Puppeteer.
     </p>
   </div>
+  <br>
   <div class="end">
     <h3 class="middle-head">Project Process</h3>
     <p>
@@ -95,16 +103,16 @@
       <br>
       <div class="server-row">
         <div class="server-col">
-          <img src="img/case1/aws.png" class="serverless" alt="serverless">
+          <img src="img/case1/cal-api.png" class="calendar" alt="serverless">
         </div>
         <div class="server-col">
-          <img src="img/case1/serverless.png" class="serverless" alt="serverless">
+          <img src="img/case1/serverless1.png" class="serverless" alt="serverless">
         </div>
       </div>
       <br>
       I then proceeded to build out the main functionality of the app such
       as filtering events by city, showing/hiding event details, & specifying (and rendering the specified) number of events. Throughout this
-      process I employed unit testing to ensure my individual app components functioned independently as well as integration testing to ensure
+      process I employed unit testing with Jest to ensure my individual app components functioned independently as well as integration testing to ensure
       all the components of my app functioned properly in conjunction with one another. At times, this was a frustrating step as I would feel my 
       test cases should all pass, only to find that one (or more) were failing, but more often than not this issue was simply a case of misnaming
       parts of my test cases. 
@@ -116,21 +124,29 @@
       I then set up my service worker and web app manifest to convert my app to a full PWA with the capability of being installed on both computers as
       well as mobile devices.
       <br>
+      <br>
       <div class="error-row">
         <div class="error-col">
-          <img src="img/case1/err1.png" class="error" alt="serverless">
+          <img src="img/case1/err11.png" class="error" alt="serverless">
         </div>
         <div class="error-col">
-          <img src="img/case1/err2.png" class="error" alt="serverless">
+          <img src="img/case1/err22.png" class="error" alt="serverless">
         </div>
         <div class="error-col">
-          <img src="img/case1/err3.png" class="error" alt="serverless">
+          <img src="img/case1/err33.png" class="error" alt="serverless">
         </div>
       </div>
       <br>
       And lastly rounded out the project with some data visualization via the Recharts library, with a pie chart breaking down the percentage of topics 
       of discussion for events and a line chart showing the numbers of events per city.
     </p>
+    <br>
+    <h3 class="middle-head">Challenges</h3>
+    <p>
+      My main challenge for this project was learning how to write tests per TDD properly. Although the tests are written in JavaScript, they do have their own flavor of syntax
+      that initially tripped me up a bit, especially when changing components of my "feature" files & not immediately recognizing the changes that needed to be made within my tests.
+      Between reading Jest documentation, & sharing some of my issues with the CareerFoundry student community I was able to get a better grasp of this though and completed my project.
+    </p>  
     <h3 class="middle-head">Conclusion</h3>
     <p>
       This project threw a lot of new knowledge my way between working with serverless functions & understanding and creating PWAs, as well as gave

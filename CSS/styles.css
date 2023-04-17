@@ -125,7 +125,7 @@ h3 {
 }
 
 .meetpic {
-  display: block;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   width: 90%;
@@ -136,10 +136,9 @@ h3 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 320px;
-  height: 500px;
+  width: 45%;
  /* height: 100px;*/
-  border-radius: 25px;
+  border-radius: 10px;
   
 }
 
@@ -166,11 +165,39 @@ h3 {
 .project-text {
   text-align: center;
   font-size: 18px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .project-tech {
   text-align: center;
   font-size: 14px;
+  margin-top: auto;
+}
+
+.api-tech {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 60px;
+}
+
+.react-tech {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 32px;
+}
+
+.project-links {
+  margin-top: auto;
+}
+
+.test {
+  margin-top: auto;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  border-radius: 25px;
 }
 
 .git-links {
@@ -189,6 +216,7 @@ h3 {
   transition: 0.9s opacity;
   text-align: center; 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -356,11 +384,18 @@ button:focus,
 
 .serverless { 
   width: 650px;
-  height: 400px;
   display: flex;
   flex-direction: row;
   text-align: center;
   margin: auto;
+}
+
+.calendar { 
+  width: 650px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin-top: 22px;
 }
 
 .error-row {
@@ -439,7 +474,7 @@ button:focus,
 }
 
 .brett-app-screen { 
-  width: 475px;
+  width: 480px;
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -645,10 +680,12 @@ button:focus,
 }
 
 .my-work__item {
- display: var(--display-inline-block);
+ display: var(--display-flex);
+ flex-direction: column;
  width: 33%;
  border-radius: 25px;
  background-color: #ff7f50;
+ position: relative;
 }
 
 /*about me page*/
