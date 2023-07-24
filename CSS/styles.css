@@ -88,6 +88,12 @@ ul li a:hover:before{
   transform:scaleX(1);
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: 'EB Garamond', serif;
   font-weight: 400;
@@ -95,8 +101,10 @@ body {
   /*sets the font size to 16px*/
   line-height: 1.6;
   /*sets the line height to 1.6 */
-  background-color: var(--background-color);
+  /*background-color: var(--background-color);*/
   color: var(--secondary-text);
+  background-image: linear-gradient(to bottom, #00022F 0%, #01114F 55%, #031563 90%);
+  background-attachment: fixed;
 }
 
 h1{
@@ -342,6 +350,7 @@ button:focus,
   margin: 0 auto;
   padding: 10px;
   line-height: 2em;
+  min-height: 100vh;
 }
 
 /*meet app case study*/
